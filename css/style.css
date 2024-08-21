@@ -1,0 +1,131 @@
+@import url(./normalise.css);
+
+body {
+  font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont,
+    "Helvetica Neue", Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #181818;
+  color: #ffffff;
+  user-select: none;
+}
+
+.calculator {
+  width: 380px;
+  height: 780px;
+  border: 1px solid #d1d1d1;
+  border-radius: 50px;
+  background-color: #010101;
+}
+
+.calculator__interface {
+  display: flex;
+  justify-content: space-between;
+}
+
+.time {
+  font-size: 16px;
+  margin-top: 18px;
+  margin-left: 40px;
+}
+
+.island {
+  width: 45px;
+  height: 6px;
+  background-color: #333333;
+  border-radius: 10px;
+  align-self: center;
+}
+
+.interface {
+  width: 70px;
+  height: 21px;
+  margin-top: 20px;
+  margin-right: 19px;
+}
+
+.content {
+  padding-top: 145px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.calculator__display {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 338px;
+  height: 100px;
+  font-size: 70px;
+  color: #ffffff;
+  overflow: hidden;
+  padding-left: 17px;
+  padding-right: 17px;
+}
+
+.calculator__display-value {
+  font-weight: 200;
+}
+
+.controls {
+  font-size: 26px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 13px;
+  color: #000000;
+}
+
+.controls__item {
+  background-color: #a5a5a5;
+}
+
+.controls__item--division {
+  font-size: 32px;
+  background-color: #f89b10;
+  color: #ffffff;
+}
+
+.num-operators {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.numbers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px 13px;
+}
+
+.operators {
+  display: flex;
+  flex-direction: column;
+  row-gap: 13px;
+}
+
+.operators__item {
+  background-color: #f89b10;
+}
+
+/*media*/
+
+@media (max-width: 414px) {
+  body {
+    background-color: #000000;
+  }
+
+  .calculator {
+    border-style: hidden;
+    border-radius: 0%;
+  }
+
+  .calculator__interface {
+    visibility: hidden;
+  }
+
+  .calculator__keys::after {
+    display: none;
+  }
+}

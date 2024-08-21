@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" type="image/png" href="./img/calculator.png" />
+    <script src="./js/app.js" defer></script>
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="calculator__interface">
+        <div class="time">00:06</div>
+        <div class="island"></div>
+        <div class="interface">
+          <img src="./img/interface.png" alt="interface" />
+        </div>
+      </div>
+      <div class="content">
+        <div class="calculator__display">
+          <span class="calculator__display-value">0</span>
+        </div>
+        <div class="calculator__keys">
+          <section class="controls">
+            <div class="controls__item btn">AC</div>
+            <div class="controls__item btn">+/-</div>
+            <div class="controls__item btn">%</div>
+            <div class="controls__item controls__item--division btn" onclick="handleOperatorsClick(event)">&#247;</div>
+          </section>
+          <div class="num-operators">
+            <section class="numbers" onclick="handleNumbersClick(event)">
+              <div class="numbers__item btn">7</div>
+              <div class="numbers__item btn">8</div>
+              <div class="numbers__item btn">9</div>
+              <div class="numbers__item btn">4</div>
+              <div class="numbers__item btn">5</div>
+              <div class="numbers__item btn">6</div>
+              <div class="numbers__item btn">1</div>
+              <div class="numbers__item btn">2</div>
+              <div class="numbers__item btn">3</div>
+              <div class="numbers__item zero btn">0</div>
+              <div class="numbers__item btn">,</div>
+            </section>
+            <section class="operators" onclick="handleOperatorsClick(event)">
+              <div class="operators__item btn">&#215;</div>
+              <div class="operators__item btn">&#8722;</div>
+              <div class="operators__item btn">+</div>
+              <div class="operators__item btn" onclick="calculate()">=</div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
