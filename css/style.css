@@ -116,9 +116,35 @@ body {
     background-color: #000000;
   }
 
+  .calculator__display {
+    padding: 20px;
+    width: 375px;
+  }
+
+  .calculator__display-value {
+    font-size: 80px;
+  }
+
+  .controls {
+    justify-content: space-around;
+  }
+
+  .numbers {
+    padding-left: 8px;
+  }
+
+  .operators {
+    padding-right: 7px;
+  }
+
+  .numbers__item {
+    margin-right: 2px;
+  }
+
   .calculator {
     border-style: hidden;
     border-radius: 0%;
+    height: 470px;
   }
 
   .calculator__interface {
@@ -127,5 +153,23 @@ body {
 
   .calculator__keys::after {
     display: none;
+  }
+
+  .content {
+    padding: 0;
+  }
+
+  .btn {
+    width: 80px;
+    height: 80px;
+  }
+
+  .zero {
+    display: flex;
+    justify-content: flex-start;
+    width: 173px;
+    border-radius: 60px;
+    padding-left: 22px;
+    margin: 0;
   }
 }
